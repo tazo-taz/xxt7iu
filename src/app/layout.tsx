@@ -23,6 +23,7 @@ export default function RootLayout({
     <html lang='en' className={cn('bg-white text-slate-900 antialiased font-light', inter.className)}>
       <body className='min-h-screen pt-12 bg-slate-50 antialiased'>
         <Providers>
+          {/* @ts-expect-error */}
           <Navbar />
 
           {authModal}
