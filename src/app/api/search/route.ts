@@ -8,6 +8,8 @@ export async function GET(req: Request) {
         return new Response("Invalid query", { status: 400 })
     }
 
+
+
     const results = await db.subreddit
         .findMany({
             where: {
